@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>大风车</title>
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+		}
+		.main{
+			margin:300px;
+            width: 320px;
+            height: 500px;
+            position: relative;
+            background-image: url(img/fcbg.png);
+		}
+		.log{
+           position: absolute;
+           width: 90px;
+           height: 97px;
+           background-image: url(img/fcc.png);
+           left: 0;
+           z-index: 200;
+		}
+		.tran{
+			position: absolute;
+			width: 427px;
+			height: 430px;
+			left: -163px;
+			top:-165px;
+			background-image: url(img/fc.png);
+			animation-name: fenche;
+			animation-duration:2s;
+			animation-timing-function:linear;
+			animation-iteration-count:infinite;
+		}
+		@keyframes fenche{
+			0%{
+				transform: rotateZ(0deg);
+			}
+			100%{
+				transform:rotateZ(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="log"></div>
+		<div class="tran"></div>
+	</div>
+</body>
+</html>

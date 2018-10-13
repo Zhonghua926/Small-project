@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	box</title>
+	<style>
+	    .dad{
+	    	width: 200px;
+	    	height: 200px;
+	    	margin:200px;
+	    	position: relative;
+	    	animation-name: myaction;
+		    animation-duration: 8s;
+		    animation-iteration-count: infinite;
+	    	transform-style: preserve-3d;
+	    	animation-timing-function: linear;
+	    	transform: rotateZ(45deg) rotateX(45deg);
+
+	    }
+	    .dad:hover{
+	    	animation-play-state: paused;
+	    }
+		.box{
+			width: 200px;
+			height: 200px;
+            position: absolute;
+            top:0;
+            left: 0;
+		}
+		.box1{
+			background-color: white;
+			transform: translateZ(-100px);
+		}
+		.box2{
+			background-color: white;
+			transform: rotateY(90deg) translateZ(-100px);
+		}
+		.box3{
+			background-color: white;
+			transform: rotateY(90deg) translateZ(100px);
+		}
+		.box4{
+			background-color: white;
+			transform: rotateX(90deg) translateZ(-100px);
+		}
+		.box5{
+			background-color: white;
+			transform: rotateX(90deg) translateZ(100px);
+		}
+		.box6{
+			background-color: white;
+			transform:translateZ(100px);
+		}
+		ul{
+			margin:0;
+			padding: 0;
+		}
+		ul li{
+			margin:3px;
+			width:60px;
+			height: 60px;
+			float: left;
+			border-radius: 5px;
+			list-style: none;
+			line-height: 60px;
+			text-align: center;
+		}
+		.box1 ul li{
+			background-color: rgba(255,0,0);
+		}
+		.box2 ul li{
+			background-color: rgba(0,255,0);
+		}
+		.box3 ul li{
+			background-color: rgba(0,0,255);
+		}
+		.box4 ul li{
+			background-color: rgba(255,255,0);
+		}
+		.box5 ul li{
+			background-color: rgba(155,15,80);
+		}
+		.box6 ul li{
+			background-color: rgba(0,60,30);
+		}
+		.box ul li a{
+			font-size: 12px;
+			color: black; 
+		}
+		@keyframes myaction{
+			
+			0%{
+				transform:rotateZ(45deg) rotateX(0deg) rotateY(0deg);
+			}
+			20%{
+				transform:rotateZ(45deg) rotateX(45deg) rotateY(50deg);
+			}
+			40%{
+				transform:rotateZ(45deg) rotateX(100deg) rotateY(90deg);
+			}
+			60%{
+				transform:rotateZ(45deg) rotateX(180deg) rotateY(160deg);
+			}
+			80%{
+				transform:rotateZ(45deg) rotateX(270deg) rotateY(240deg);
+			}
+			100%{
+				transform:rotateZ(45deg)rotateX(360deg) rotateY(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+    <div class="dad">
+		<div class="box1 box">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="box2 box">
+            <ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="box3 box">
+            <ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="box4 box">
+			<ul>
+				<li><a href="./newblance/index.html">newblance</a></li>
+				<li><a href="./weipinhui/index.html">唯品会</a></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+
+		</div>
+		<div class="box5 box">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="box6 box">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>	
+</body>
+</html>

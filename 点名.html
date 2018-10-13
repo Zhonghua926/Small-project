@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		ul,li{
+			list-style: none;margin: 0;
+		}
+		li{
+			width: 100px;height: 100px;font-size: 40px;line-height: 100px;text-align: center;
+			border:1px solid blue;float: left;margin-left: 10px;
+		}
+		button{
+			margin-top: 140px;width: 100px;height: 30px;text-align: center;
+			line-height: 30px;
+		}
+	</style>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('button:first').click(function(){
+				$('li').each(function(index,item){
+					var set = setInterval(function(){
+						var num = parseInt(Math.random()*99+1);
+						$(item).html(num);
+					},50);
+					$('button:eq(1)').click(function(){
+						clearInterval(set);
+					})
+				})
+			})
+		})
+	</script>
+</head>
+<body>
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<button>开始</button><button>确认</button>
+</body>
+</html>
